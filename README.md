@@ -1,6 +1,3 @@
-Absolutely! Here's a polished and more engaging version of your README that captures the heart of your project while sounding professional and inviting:
-
----
 
 # 🐾 Ryuk — Your Fierce Discord Moderator Bot
 

@@ -16,7 +16,9 @@ async def on_ready():
 
 async def setup_hook():
     await bot.load_extension("cogs.bienvenida")
-    await bot.load_extension("cogs.moderacion.purge")
+    await bot.load_extension("cogs.moderation.purge")
+    await bot.load_extension("cogs.moderation.kick")
+    await bot.load_extension("cogs.moderation.ban")
         
 bot.setup_hook = setup_hook
 

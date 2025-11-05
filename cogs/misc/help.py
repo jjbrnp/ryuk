@@ -6,7 +6,7 @@ class Help(commands.Cog):
         self.bot = bot
         print("Help cog loaded successfully")
 
-    @commands.command(name="help")
+    @commands.hybrid_command(name="help", description="Display a menu where you can see the utilities and information of Ryuk")
     async def help_command(self, ctx):
         embed = discord.Embed(
             title="Ryuk Help",

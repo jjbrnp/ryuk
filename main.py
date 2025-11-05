@@ -22,6 +22,7 @@ async def setup_hook():
     await bot.load_extension("cogs.moderation.mute")
     await bot.load_extension("cogs.moderation.unmute")
     await bot.load_extension("cogs.misc.help")
+    await bot.tree.sync()
         
 bot.setup_hook = setup_hook
 

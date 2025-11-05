@@ -7,7 +7,7 @@ class Kick(commands.Cog):
         self.bot = bot
         print("Kick cog loaded successfully")
 
-    @commands.command(name="kick")
+    @commands.hybrid_command(name="kick", description="Kick a member with a reason.")
     @commands.has_permissions(kick_members=True)
     async def kick(self, ctx, user: discord.Member = None, *, reason=None):
 

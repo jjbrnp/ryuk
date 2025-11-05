@@ -7,7 +7,7 @@ class Ban(commands.Cog):
         self.bot = bot
         print("Ban cog loaded successfully")
 
-    @commands.command(name="Ban")
+    @commands.hybrid_command(name="ban", description="Ban a member with a reason.")
     @commands.has_permissions(ban_members=True)
     async def ban(self, ctx, user: discord.Member = None, *, reason=None):
 

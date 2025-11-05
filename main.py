@@ -8,7 +8,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 
-bot = commands.Bot(command_prefix="r!", intents=intents)
+bot = commands.Bot(command_prefix="r!", help_command=None, intents=intents)
 
 @bot.event
 async def on_ready():
@@ -19,6 +19,9 @@ async def setup_hook():
     await bot.load_extension("cogs.moderation.purge")
     await bot.load_extension("cogs.moderation.kick")
     await bot.load_extension("cogs.moderation.ban")
+    await bot.load_extension("cogs.moderation.mute")
+    await bot.load_extension("cogs.moderation.unmute")
+    await bot.load_extension("cogs.misc.help")
         
 bot.setup_hook = setup_hook
 

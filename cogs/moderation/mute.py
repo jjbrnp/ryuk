@@ -7,7 +7,7 @@ class Mute(commands.Cog):
         self.bot = bot
         print("Mute cog loaded successfully")
 
-    @commands.command(name="mute")
+    @commands.hybrid_command(name="mute", description="Mute a member with a reason.")
     @commands.has_permissions(manage_roles=True)
     async def mute(self, ctx, user: discord.Member = None, *, reason=None):
         

@@ -7,7 +7,7 @@ class Purge(commands.Cog):
         self.bot = bot
         print("Purge cog loaded successfully")
 
-    @commands.command(name="purge")
+    @commands.hybrid_command(name="purge", description="Purge a number of messages")
     @commands.has_permissions(manage_messages=True)
     async def purge(self, ctx, amount: int):
         if amount > 100:

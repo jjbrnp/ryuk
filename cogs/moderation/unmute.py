@@ -7,7 +7,7 @@ class Unmute(commands.Cog):
         self.bot = bot
         print("Unmute cog loaded successfully")
 
-    @commands.command(name="unmute")
+    @commands.hybrid_command(name="unmute", description="Unmute a member")
     @commands.has_permissions(manage_roles=True)
     async def unmute(self, ctx, user: discord.Member = None):
 

@@ -30,6 +30,7 @@ Ryuk is a **Discord moderation bot** written in Python, designed to bring struct
 2. Create a `.env` file and add your bot token:
    ```
    DISCORD_TOKEN=your_token_here
+   guild_id=your_server_id (if planning to use the welcome message)
    ```
 
 3. Install dependencies:
